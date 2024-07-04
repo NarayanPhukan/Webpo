@@ -1,0 +1,263 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #ff6600 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Showcase styles */
+#showcase {
+    min-height: 400px;
+    background: url('showcase.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: #fff;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Main section styles */
+section#main {
+    padding: 20px;
+    background: #fff;
+}
+
+section#main h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+section#main p {
+    margin-bottom: 20px;
+}
+
+section#main ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#main ul li {
+    padding: 10px;
+    background: #e4e4e4;
+    margin-bottom: 10px;
+}
+
+section#main ul li:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+/* CTA Section */
+#cta {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+#cta a {
+    color: #ff6600;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Form styles */
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e55b00;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Feedback section styles */
+#feedback {
+    padding: 20px 0;
+    background: #fff;
+}
+
+#feedback .container {
+    padding: 20px;
+    background: #e4e4e4;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#feedback h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#feedback p {
+    margin-bottom: 20px;
+}
+
+#feedback .form-group {
+    margin-bottom: 15px;
+}
+
+#feedback label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#feedback input[type="text"],
+#feedback input[type="email"],
+#feedback textarea,
+#feedback select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+#feedback button:hover {
+    background: #222;
+}

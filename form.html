@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sports Management - Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="volleyball-solid.svg" />
+  </head>
+  <body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Sports Management</h1>
+            </div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="" target="_blank"  class="contents">Home</a></li>
+      <li><a href="image.html" target="_blank"  class="contents">Image</a></li>
+      <li><a href="" target="_blank"  class="contents">Information</a></li>
+      <li><a href="form.html" target="_blank"  class="contents">Form</a></li>
+      <li><a href="feedback.html" target="_blank"  class="contents">Feedback</a></li>
+      <li><a href="play-ground.html" target="_blank"  class="contents">Play-Ground</a></li>
+    </ul>
+  </nav>
+   </div>
+    </header>
+    <div class="form-container">
+        <h2>Apply for Your Favorite Sport</h2>
+        <form action="/submit-application" method="POST">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="sport">Select Sport</label>
+                <select id="sport" name="sport" required>
+                    <option value="">Choose a sport</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="baseball">Baseball</option>
+                    <option value="soccer">Soccer</option>
+                    <option value="tennis">Tennis</option>
+                    <option value="hockey">Hockey</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="athletics">Athletics</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Years of Experience</label>
+                <input type="number" id="experience" name="experience" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Why do you want to join?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+  </body>
+</html>
