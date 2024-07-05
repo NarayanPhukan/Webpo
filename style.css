@@ -18,17 +18,16 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding-top: 10px;
+    padding-top: 30px;
     min-height: 70px;
     border-bottom: #ff6600 3px solid;
-    position: relative;
 }
 
 header a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 header ul {
@@ -54,64 +53,6 @@ header nav {
     margin-top: 10px;
 }
 
-header .highlight {
-    color: #ff6600;
-}
-
-header .toggle {
-    display: none;
-    float: right;
-    margin-top: 20px;
-}
-
-header .toggle div {
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    margin: 5px 0;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin: 0;
-}
-
-@media (max-width: 600px) {
-    header #branding,
-    header nav {
-        float: none;
-        text-align: center;
-    }
-
-    header .toggle {
-        display: block;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    header nav ul {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    header nav.active {
-        display: block;
-    }
-}
-
 /* Showcase styles */
 #showcase {
     min-height: 400px;
@@ -130,78 +71,138 @@ header nav ul li {
     font-size: 20px;
 }
 
-/* Intro section styles */
-#intro {
-    padding: 20px 0;
+/* Main section styles */
+section#main {
+    padding: 20px;
     background: #fff;
 }
 
-#intro .container {
-    padding: 20px;
-    background: #e4e4e4;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-#intro h2 {
+section#main h2 {
     font-size: 30px;
-    margin-bottom: 20px;
-}
-
-#intro h3 {
-    font-size: 24px;
     margin-bottom: 10px;
-    color: #ff6600;
 }
 
-#intro p {
+section#main p {
     margin-bottom: 20px;
 }
 
-#intro ul {
+section#main ul {
     list-style: none;
     padding: 0;
 }
 
-#intro ul li {
+section#main ul li {
     padding: 10px;
-    background: #f4f4f4;
+    background: #e4e4e4;
     margin-bottom: 10px;
-    border-left: 5px solid #ff6600;
 }
 
-/* Call to Action (CTA) section */
+section#main ul li:nth-child(odd) {
+    background: #f4f4f4;
+}
+
+/* CTA Section */
 #cta {
-    background: #ff6600;
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 30px 0;
     margin-top: 30px;
 }
 
-#cta h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-#cta p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-#cta .button {
-    display: inline-block;
+#cta a {
+    color: #ff6600;
     text-decoration: none;
-    color: #fff;
+    font-size: 20px;
+}
+
+/* Footer styles */
+footer {
     background: #333;
-    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Form styles */
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     transition: background 0.3s ease;
 }
 
-#cta .button:hover {
-    background: #222;
+button:hover {
+    background: #e55b00;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-container h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
 }
 
 /* Feedback section styles */
@@ -259,201 +260,4 @@ header nav ul li {
 
 #feedback button:hover {
     background: #222;
-}
-
-/* Application Form section styles */
-#application-form {
-    padding: 20px 0;
-    background: #fff;
-}
-
-#application-form .container {
-    padding: 20px;
-    background: #e4e4e4;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-#application-form h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-#application-form p {
-    margin-bottom: 20px;
-}
-
-#application-form .form-group {
-    margin-bottom: 15px;
-}
-
-#application-form label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-#application-form input[type="text"],
-#application-form input[type="email"],
-#application-form select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#application-form button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background 0.3s ease;
-}
-
-#application-form button:hover {
-    background: #222;
-}
-
-/* Footer styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive styles */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    header #branding,
-    header nav {
-        float: none;
-        text-align: center;
-    }
-
-    header .toggle {
-        display: block;
-    }
-
-    header nav {
-        display: none;
-    }
-
-    header nav ul {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    header nav.active {
-        display: block;
-    }
-
-    #showcase h1 {
-        font-size: 36px;
-        margin-top: 60px;
-    }
-
-    #showcase p {
-        font-size: 18px;
-    }
-
-    #intro .container {
-        padding: 10px;
-    }
-
-    #intro h2 {
-        font-size: 24px;
-    }
-
-    #intro h3 {
-        font-size: 20px;
-    }
-
-    #cta h2 {
-        font-size: 20px;
-    }
-
-    #cta p {
-        font-size: 16px;
-    }
-
-    #cta .button {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    #feedback .container {
-        padding: 10px;
-    }
-
-    #feedback h2 {
-        font-size: 24px;
-    }
-
-    #feedback p {
-        font-size: 16px;
-    }
-
-    #feedback .form-group {
-        margin-bottom: 10px;
-    }
-
-    #feedback input[type="text"],
-    #feedback input[type="email"],
-    #feedback textarea,
-    #feedback select {
-        padding: 8px;
-        font-size: 16px;
-    }
-
-    #feedback button {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
-
-    #application-form .container {
-        padding: 10px;
-    }
-
-    #application-form h2 {
-        font-size: 24px;
-    }
-
-    #application-form p {
-        font-size: 16px;
-    }
-
-    #application-form .form-group {
-        margin-bottom: 10px;
-    }
-
-    #application-form input[type="text"],
-    #application-form input[type="email"],
-    #application-form select {
-        padding: 8px;
-        font-size: 16px;
-    }
-
-    #application-form button {
-        font-size: 16px;
-        padding: 8px 16px;
-    }
 }
