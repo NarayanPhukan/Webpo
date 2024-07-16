@@ -81,7 +81,7 @@ header nav ul li {
     margin: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 320px) {
     header #branding,
     header nav {
         float: none;
